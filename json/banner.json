@@ -1,0 +1,23 @@
+{
+    "image": "../img/banner/banner-1.jpg",
+    "slides": [
+        {
+            "small_text": "small text one",
+            "big_text": "big text one",
+            "button_text": "shop now",
+            "button_link": "#"
+        },
+        {
+            "small_text": "small text two",
+            "big_text": "big text two",
+            "button_text": "shop now",
+            "button_link": "#"
+        },
+        {
+            "small_text": "small text three",
+            "big_text": "big text three",
+            "button_text": "shop now",
+            "button_link": "#"
+        }
+    ]
+}
