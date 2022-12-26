@@ -1,6 +1,7 @@
 import mini from '../json/mini.json' assert { type: 'json' };
 import insta from '../json/insta.json' assert { type: 'json' };
 
+//------------------mini------------------//
 //1
 var html = "";
 var prehtml = `<div class="section-title"><h4>Hot Trend</h4></div>`;
@@ -16,8 +17,8 @@ mini.ht.forEach((item) => {
     </div>
     </div>`
 });
-
 document.getElementById('mini-s-1').innerHTML = prehtml + html;
+
 //2
 html = "";
 prehtml = `<div class="section-title"><h4>BEST SELLER</h4></div>`;
@@ -67,5 +68,4 @@ insta.posts.forEach((item) => {
     </div>
 </div>`
 });
-
 document.getElementById('insta-s-0').innerHTML = html;
