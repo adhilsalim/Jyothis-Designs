@@ -1,0 +1,62 @@
+{
+    "ht": [
+        {
+            "name": "item one",
+            "price": "59",
+            "image": "img/trend/ht-1.jpg",
+            "product_id": "JDS030501"
+        },
+        {
+            "name": "item two",
+            "price": "49",
+            "image": "img/trend/ht-2.jpg",
+            "product_id": "JDS030501"
+        },
+        {
+            "name": "item three",
+            "price": "39",
+            "image": "img/trend/ht-3.jpg",
+            "product_id": "JDS030501"
+        }
+    ],
+    "bs": [
+        {
+            "name": "item one",
+            "price": "59",
+            "image": "img/trend/ht-1.jpg",
+            "product_id": "JDS030501"
+        },
+        {
+            "name": "item two",
+            "price": "49",
+            "image": "img/trend/ht-2.jpg",
+            "product_id": "JDS030501"
+        },
+        {
+            "name": "item three",
+            "price": "39",
+            "image": "img/trend/ht-3.jpg",
+            "product_id": "JDS030501"
+        }
+    ],
+    "fr": [
+        {
+            "name": "item one",
+            "price": "59",
+            "image": "img/trend/ht-1.jpg",
+            "product_id": "JDS030501"
+        },
+        {
+            "name": "item two",
+            "price": "49",
+            "image": "img/trend/ht-2.jpg",
+            "product_id": "JDS030501"
+        },
+        {
+            "name": "item three",
+            "price": "39",
+            "image": "img/trend/ht-3.jpg",
+            "product_id": "JDS030501"
+        }
+    ]
+}
