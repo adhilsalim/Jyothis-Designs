@@ -1,5 +1,5 @@
 {
-    "image": "../img/banner/banner-1.jpg",
+    "image": "./img/banner/banner-1.jpg",
     "slides": [
         {
             "small_text": "small text one",

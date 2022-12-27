@@ -72,14 +72,10 @@ insta.posts.forEach((item) => {
 });
 document.getElementById('insta-s-0').innerHTML = html;
 
-$('.set-bg').each(function () {
-    var bg = $(this).data('setbg');
-    $(this).css('background-image', 'url(' + bg + ')');
-});
 //------------------banner------------------//
 //1
 html = "";
-prehtml = `<section class="banner set-bg" data-setbg="${banner.image}">
+prehtml = `<section class="banner set-bg" data-setbg=${banner.image}>
 <div class="container">
     <div class="row">
         <div class="col-xl-7 col-lg-8 m-auto">
@@ -97,5 +93,21 @@ banner.slides.forEach((item) => {
     </div>`;
 });
 
-console.log(prehtml + html + posthtml)
 document.getElementById("banner-s-0").insertAdjacentHTML("afterend", prehtml + html + posthtml);
+
+
+//FUNCTIONS//
+$(".banner__slider").owlCarousel({
+    loop: true,
+    margin: 0,
+    items: 1,
+    dots: true,
+    smartSpeed: 1200,
+    autoHeight: false,
+    autoplay: true
+});
+
+$('.set-bg').each(function () {
+    var bg = $(this).data('setbg');
+    $(this).css('background-image', 'url(' + bg + ')');
+});
