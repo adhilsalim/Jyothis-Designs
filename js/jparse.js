@@ -72,6 +72,10 @@ insta.posts.forEach((item) => {
 });
 document.getElementById('insta-s-0').innerHTML = html;
 
+$('.set-bg').each(function () {
+    var bg = $(this).data('setbg');
+    $(this).css('background-image', 'url(' + bg + ')');
+});
 //------------------banner------------------//
 //1
 html = "";
