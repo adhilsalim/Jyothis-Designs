@@ -1,6 +1,7 @@
 import mini from '../json/mini.json' assert { type: 'json' };
 import insta from '../json/insta.json' assert { type: 'json' };
 import banner from '../json/banner.json' assert { type: 'json' };
+import recentOrders from '../json/recentOrders.json' assert { type: 'json' };
 
 //------------------mini------------------//
 //1
@@ -94,6 +95,33 @@ banner.slides.forEach((item) => {
 });
 
 document.getElementById("banner-s-0").insertAdjacentHTML("afterend", prehtml + html + posthtml);
+
+//------------------recentOrders------------------//
+html = "";
+prehtml = "";
+posthtml = "";
+
+recentOrders.orders.forEach((item) => {
+    html +=
+        `<div class="col-lg-3 col-md-4 col-sm-6 ${item.category}">
+    <div class="product__item">
+        <div class="product__item__pic set-bg" data-setbg=${item.image}>
+            <div class="label ${item.label_style}">${item.label_text}</div>
+            <ul class="product__hover">
+                <li><a href="${item.link}" onclick="${item.function}"><span class="icon_bag_alt"></span></a></li>
+            </ul>
+        </div>
+        <div class="product__item__text">
+            <h6><a href="${item.link}" onclick="${item.function}">${item.text_small}</a></h6>
+            <div class="product__price">${item.text_big_small}</div>
+        </div>
+    </div>
+    </div>`;
+});
+
+
+document.getElementById('recentOrders-s-0').innerHTML = html;
+
 
 
 //FUNCTIONS//
