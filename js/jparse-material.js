@@ -45,6 +45,39 @@ materials.materials.forEach((item) => {
 
 document.getElementById('material-s-0').innerHTML = html;
 
+html = "";
+
+materials.categories.forEach((item) => {
+    html +=
+        `<div class="card">
+    <div class="card-heading ${item.active}">
+        <a data-toggle="collapse" data-target="#collapseOne">${item.title}</a>
+    </div>
+    <div id="collapseOne" class="collapse show" data-parent="#accordionExample">
+        <div class="card-body"><ul id="${item.id}"></ul>
+        </div>
+    </div>
+    </div>`;
+});
+
+document.getElementById('accordionExample').innerHTML = html;
+
+var catId = "1";
+html = "";
+
+materials.categories.forEach((cat) => {
+    cat.items.forEach((item) => {
+        html +=
+            `<li><a href="#">${item.item_name}</a></li>`;
+    });
+    document.getElementById('category-' + catId).innerHTML = html;
+    catId++;
+    html = "";
+});
+
+
+
+
 //FUNCTIONS
 $('.set-bg').each(function () {
     var bg = $(this).data('setbg');
