@@ -1,84 +1,84 @@
 {
     "orders": [
         {
-            "text_big": "big text one",
-            "text_small_bold": "small text bold",
+            "text_small": "big text one",
+            "text_big_small": "small text bold",
             "category": "mix women",
             "image": "img/product/product-1.jpg",
             "label_style": "new",
             "label_text": "label text",
             "link": "#",
-            "on_click": "console.log('click')"
+            "function": "console.log('click')"
         },
         {
-            "text_big": "big text one",
-            "text_small_bold": "small text bold",
+            "text_small": "big text one",
+            "text_big_small": "small text bold",
             "category": "mix women",
             "image": "img/product/product-1.jpg",
             "label_style": "new",
             "label_text": "label text",
             "link": "#",
-            "on_click": "console.log('click')"
+            "function": "console.log('click')"
         },
         {
-            "text_big": "big text one",
-            "text_small_bold": "small text bold",
+            "text_small": "big text one",
+            "text_big_small": "small text bold",
             "category": "mix women",
             "image": "img/product/product-1.jpg",
             "label_style": "new",
             "label_text": "label text",
             "link": "#",
-            "on_click": "console.log('click')"
+            "function": "console.log('click')"
         },
         {
-            "text_big": "big text one",
-            "text_small_bold": "small text bold",
+            "text_small": "big text one",
+            "text_big_small": "small text bold",
             "category": "mix women",
             "image": "img/product/product-1.jpg",
             "label_style": "new",
             "label_text": "label text",
             "link": "#",
-            "on_click": "console.log('click')"
+            "function": "console.log('click')"
         },
         {
-            "text_big": "big text one",
-            "text_small_bold": "small text bold",
+            "text_small": "big text one",
+            "text_big_small": "small text bold",
             "category": "mix women",
             "image": "img/product/product-1.jpg",
             "label_style": "new",
             "label_text": "label text",
             "link": "#",
-            "on_click": "console.log('click')"
+            "function": "console.log('click')"
         },
         {
-            "text_big": "big text one",
-            "text_small_bold": "small text bold",
+            "text_small": "big text one",
+            "text_big_small": "small text bold",
             "category": "mix women",
             "image": "img/product/product-1.jpg",
             "label_style": "new",
             "label_text": "label text",
             "link": "#",
-            "on_click": "console.log('click')"
+            "function": "console.log('click')"
         },
         {
-            "text_big": "big text one",
-            "text_small_bold": "small text bold",
+            "text_small": "big text one",
+            "text_big_small": "small text bold",
             "category": "mix women",
             "image": "img/product/product-1.jpg",
             "label_style": "new",
             "label_text": "label text",
             "link": "#",
-            "on_click": "console.log('click')"
+            "function": "console.log('click')"
         },
         {
-            "text_big": "big text one",
-            "text_small_bold": "small text bold",
+            "text_small": "big text one",
+            "text_big_small": "small text bold",
             "category": "mix women",
             "image": "img/product/product-1.jpg",
             "label_style": "new",
             "label_text": "label text",
             "link": "#",
-            "on_click": "console.log('click')"
+            "function": "console.log('click')"
         }
     ]
 }
