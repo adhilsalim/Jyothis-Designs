@@ -3,7 +3,7 @@
         {
             "text_small": "big text one",
             "text_big_small": "small text bold",
-            "category": "mix women",
+            "category": "mix women kid",
             "image": "img/product/product-1.jpg",
             "label_style": "new",
             "label_text": "label text",
@@ -73,7 +73,7 @@
         {
             "text_small": "big text one",
             "text_big_small": "small text bold",
-            "category": "mix women",
+            "category": "mix kid",
             "image": "img/product/product-1.jpg",
             "label_style": "new",
             "label_text": "label text",
