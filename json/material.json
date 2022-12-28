@@ -6,7 +6,9 @@
             "image": "img/shop/shop-1.jpg",
             "label_style": "new",
             "label_text": "label text",
-            "link": "#"
+            "link": "#",
+            "m_id": "001",
+            "function": "console.log('hola')"
         },
         {
             "small_text": "This is a small text",
@@ -14,7 +16,9 @@
             "image": "img/shop/shop-1.jpg",
             "label_style": "new",
             "label_text": "label text",
-            "link": "#"
+            "link": "#",
+            "m_id": "002",
+            "function": "console.log('hola')"
         },
         {
             "small_text": "This is a small text",
@@ -22,7 +26,9 @@
             "image": "img/shop/shop-1.jpg",
             "label_style": "new",
             "label_text": "label text",
-            "link": "#"
+            "link": "#",
+            "m_id": "003",
+            "function": "console.log('hola')"
         },
         {
             "small_text": "This is a small text",
@@ -30,7 +36,9 @@
             "image": "img/shop/shop-1.jpg",
             "label_style": "new",
             "label_text": "label text",
-            "link": "#"
+            "link": "#",
+            "m_id": "004",
+            "function": "console.log('hola')"
         },
         {
             "small_text": "This is a small text",
@@ -38,7 +46,9 @@
             "image": "img/shop/shop-1.jpg",
             "label_style": "new",
             "label_text": "label text",
-            "link": "#"
+            "link": "#",
+            "m_id": "005",
+            "function": "console.log('hola')"
         },
         {
             "small_text": "This is a small text",
@@ -46,7 +56,9 @@
             "image": "img/shop/shop-1.jpg",
             "label_style": "new",
             "label_text": "label text",
-            "link": "#"
+            "link": "#",
+            "m_id": "006",
+            "function": "console.log('hola')"
         },
         {
             "small_text": "This is a small text",
@@ -54,7 +66,9 @@
             "image": "img/shop/shop-1.jpg",
             "label_style": "new",
             "label_text": "label text",
-            "link": "#"
+            "link": "#",
+            "m_id": "007",
+            "function": "console.log('hola')"
         },
         {
             "small_text": "This is a small text",
@@ -62,7 +76,9 @@
             "image": "img/shop/shop-1.jpg",
             "label_style": "new",
             "label_text": "label text",
-            "link": "#"
+            "link": "#",
+            "m_id": "008",
+            "function": "console.log('hola')"
         },
         {
             "small_text": "This is a small text",
@@ -70,7 +86,9 @@
             "image": "img/shop/shop-1.jpg",
             "label_style": "new",
             "label_text": "label text",
-            "link": "#"
+            "link": "#",
+            "m_id": "009",
+            "function": "console.log('hola')"
         }
     ],
     "categories": [
