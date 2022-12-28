@@ -119,7 +119,6 @@ recentOrders.orders.forEach((item) => {
     </div>`;
 });
 
-
 document.getElementById('recentOrders-s-0').innerHTML = html;
 
 
