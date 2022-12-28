@@ -238,6 +238,11 @@ Created: Colorib
 //REDIRECTION
 function nextPage(id) {
     var pageUrl = window.location.href;
-    var url = pageUrl + '?p=' + id;
-    window.location.replace(url);
+
+    if (pageUrl.includes('material')) {
+        var url = pageUrl.replace('material', 'design') + '?p=' + id;
+        window.location.replace(url);
+    }
+
+
 }

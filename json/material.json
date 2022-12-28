@@ -18,7 +18,7 @@
             "label_text": "label text",
             "link": "#",
             "m_id": "002",
-            "function": "console.log('hola')"
+            "function": "nextPage(this.dataset.mid)"
         },
         {
             "small_text": "This is a small text",
@@ -28,7 +28,7 @@
             "label_text": "label text",
             "link": "#",
             "m_id": "003",
-            "function": "console.log('hola')"
+            "function": "nextPage(this.dataset.mid)"
         },
         {
             "small_text": "This is a small text",
@@ -38,7 +38,7 @@
             "label_text": "label text",
             "link": "#",
             "m_id": "004",
-            "function": "console.log('hola')"
+            "function": "nextPage(this.dataset.mid)"
         },
         {
             "small_text": "This is a small text",
@@ -48,7 +48,7 @@
             "label_text": "label text",
             "link": "#",
             "m_id": "005",
-            "function": "console.log('hola')"
+            "function": "nextPage(this.dataset.mid)"
         },
         {
             "small_text": "This is a small text",
@@ -58,7 +58,7 @@
             "label_text": "label text",
             "link": "#",
             "m_id": "006",
-            "function": "console.log('hola')"
+            "function": "nextPage(this.dataset.mid)"
         },
         {
             "small_text": "This is a small text",
@@ -68,7 +68,7 @@
             "label_text": "label text",
             "link": "#",
             "m_id": "007",
-            "function": "console.log('hola')"
+            "function": "nextPage(this.dataset.mid)"
         },
         {
             "small_text": "This is a small text",
@@ -78,7 +78,7 @@
             "label_text": "label text",
             "link": "#",
             "m_id": "008",
-            "function": "console.log('hola')"
+            "function": "nextPage(this.dataset.mid)"
         },
         {
             "small_text": "This is a small text",
@@ -88,7 +88,7 @@
             "label_text": "label text",
             "link": "#",
             "m_id": "009",
-            "function": "console.log('hola')"
+            "function": "nextPage(this.dataset.mid)"
         }
     ],
     "categories": [
