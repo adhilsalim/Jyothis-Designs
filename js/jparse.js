@@ -15,7 +15,7 @@ mini.ht.forEach((item) => {
     </div>
     <div class="trend__item__text">
         <h6>${item.name}</h6>
-        <div class="product__price">$ ${item.price}</div>
+        <div class="product__price">${item.price}</div>
     </div>
     </div>`;
 });
@@ -32,7 +32,7 @@ mini.bs.forEach((item) => {
     </div>
     <div class="trend__item__text">
         <h6>${item.name}</h6>
-        <div class="product__price">$ ${item.price}</div>
+        <div class="product__price">${item.price}</div>
     </div>
     </div>`;
 });
@@ -49,7 +49,7 @@ mini.bs.forEach((item) => {
     </div>
     <div class="trend__item__text">
         <h6>${item.name}</h6>
-        <div class="product__price">$ ${item.price}</div>
+        <div class="product__price">${item.price}</div>
     </div>
     </div>`;
 });
