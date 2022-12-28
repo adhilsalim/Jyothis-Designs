@@ -8,7 +8,7 @@
             "label_text": "label text",
             "link": "#",
             "m_id": "001",
-            "function": "console.log('hola')"
+            "function": "nextPage(this.dataset.mid)"
         },
         {
             "small_text": "This is a small text",

@@ -29,14 +29,14 @@ materials.materials.forEach((item) => {
     html +=
         `<div class="col-lg-4 col-md-6">
         <div class="product__item">
-            <div class="product__item__pic set-bg" data-setbg=${item.image}>
+            <div class="product__item__pic set-bg" data-mid=${item.m_id}  data-setbg=${item.image} onclick="${item.function}">
                 <div class="label ${item.label_style}">${item.label_text}</div>
                 <ul class="product__hover">
                     <li><a href="${item.link}"><span class="icon_bag_alt"></span></a></li>
                 </ul>
             </div>
             <div class="product__item__text">
-                <h6><a href="${item.link}">${item.small_text}</a></h6>
+                <h6><a href="${item.link}" data-mid=${item.m_id} onclick="${item.function}">${item.small_text}</a></h6>
                 <div class="product__price">${item.big_text_bold}</div>
             </div>
         </div>
@@ -83,5 +83,3 @@ $('.set-bg').each(function () {
     var bg = $(this).data('setbg');
     $(this).css('background-image', 'url(' + bg + ')');
 });
-
-//product id
