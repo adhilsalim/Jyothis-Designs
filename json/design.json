@@ -1,0 +1,128 @@
+{
+    "designs": [
+        {
+            "small_text": "This is a small text",
+            "big_text_bold": "This is a bold text",
+            "image": "img/shop/shop-1.jpg",
+            "label_style": "new",
+            "label_text": "label text",
+            "link": "#",
+            "d_id": "001",
+            "function": "nextPage(this.dataset.mid)"
+        },
+        {
+            "small_text": "This is a small text",
+            "big_text_bold": "This is a bold text",
+            "image": "img/shop/shop-1.jpg",
+            "label_style": "new",
+            "label_text": "label text",
+            "link": "#",
+            "d_id": "002",
+            "function": "nextPage(this.dataset.mid)"
+        },
+        {
+            "small_text": "This is a small text",
+            "big_text_bold": "This is a bold text",
+            "image": "img/shop/shop-1.jpg",
+            "label_style": "new",
+            "label_text": "label text",
+            "link": "#",
+            "d_id": "003",
+            "function": "nextPage(this.dataset.mid)"
+        },
+        {
+            "small_text": "This is a small text",
+            "big_text_bold": "This is a bold text",
+            "image": "img/shop/shop-1.jpg",
+            "label_style": "new",
+            "label_text": "label text",
+            "link": "#",
+            "d_id": "004",
+            "function": "nextPage(this.dataset.mid)"
+        },
+        {
+            "small_text": "This is a small text",
+            "big_text_bold": "This is a bold text",
+            "image": "img/shop/shop-1.jpg",
+            "label_style": "new",
+            "label_text": "label text",
+            "link": "#",
+            "d_id": "005",
+            "function": "nextPage(this.dataset.mid)"
+        },
+        {
+            "small_text": "This is a small text",
+            "big_text_bold": "This is a bold text",
+            "image": "img/shop/shop-1.jpg",
+            "label_style": "new",
+            "label_text": "label text",
+            "link": "#",
+            "d_id": "006",
+            "function": "nextPage(this.dataset.mid)"
+        },
+        {
+            "small_text": "This is a small text",
+            "big_text_bold": "This is a bold text",
+            "image": "img/shop/shop-1.jpg",
+            "label_style": "new",
+            "label_text": "label text",
+            "link": "#",
+            "d_id": "007",
+            "function": "nextPage(this.dataset.mid)"
+        },
+        {
+            "small_text": "This is a small text",
+            "big_text_bold": "This is a bold text",
+            "image": "img/shop/shop-1.jpg",
+            "label_style": "new",
+            "label_text": "label text",
+            "link": "#",
+            "d_id": "008",
+            "function": "nextPage(this.dataset.mid)"
+        },
+        {
+            "small_text": "This is a small text",
+            "big_text_bold": "This is a bold text",
+            "image": "img/shop/shop-1.jpg",
+            "label_style": "new",
+            "label_text": "label text",
+            "link": "#",
+            "d_id": "009",
+            "function": "nextPage(this.dataset.mid)"
+        }
+    ],
+    "categories": [
+        {
+            "title": "Category 1",
+            "id": "category-1",
+            "items": [
+                {
+                    "item_name": "Item 1"
+                },
+                {
+                    "item_name": "Item 2"
+                },
+                {
+                    "item_name": "Item 3"
+                }
+            ],
+            "active": ""
+        },
+        {
+            "title": "Category 2",
+            "id": "category-2",
+            "items": [
+                {
+                    "item_name": "Item 1"
+                },
+                {
+                    "item_name": "Item 2"
+                },
+                {
+                    "item_name": "Item 3"
+                }
+            ],
+            "active": ""
+        }
+    ]
+}

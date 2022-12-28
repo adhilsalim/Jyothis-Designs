@@ -243,6 +243,8 @@ function nextPage(id) {
         var url = pageUrl.replace('material', 'design') + '?p=' + id;
         window.location.replace(url);
     }
-
-
+    else if (pageUrl.includes('design')) {
+        var url = pageUrl.replace('design', 'size') + id;
+        window.location.replace(url);
+    }
 }

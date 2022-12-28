@@ -1,5 +1,5 @@
 import insta from '../json/insta.json' assert { type: 'json' };
-import materials from '../json/material.json' assert { type: 'json' };
+import material from '../json/material.json' assert { type: 'json' };
 
 //------------------insta------------------//
 var html = "";
@@ -25,7 +25,7 @@ html = "";
 prehtml = "";
 posthtml = "";
 
-materials.materials.forEach((item) => {
+material.materials.forEach((item) => {
     html +=
         `<div class="col-lg-4 col-md-6">
         <div class="product__item">
@@ -47,7 +47,7 @@ document.getElementById('material-s-0').innerHTML = html;
 
 html = "";
 
-materials.categories.forEach((item) => {
+material.categories.forEach((item) => {
     html +=
         `<div class="card">
     <div class="card-heading ${item.active}">
@@ -65,7 +65,7 @@ document.getElementById('accordionExample').innerHTML = html;
 var catId = "1";
 html = "";
 
-materials.categories.forEach((cat) => {
+material.categories.forEach((cat) => {
     cat.items.forEach((item) => {
         html +=
             `<li><a href="#">${item.item_name}</a></li>`;
