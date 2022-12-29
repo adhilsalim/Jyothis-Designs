@@ -83,7 +83,12 @@
 </head>
 
 <body class="bg-light">
-
+    <!-- <form method="POST"
+        action="https://script.google.com/macros/s/AKfycbyeqO-iHxoalDKW76ZF6Tt6AQdh__UH5z2E57SJKZFO8ESlxYF-ljk-xCKGgq5TMxQs/exec">
+        <input name="Email" type="email" placeholder="Email" required>
+        <input name="Name" type="text" placeholder="Name" required>
+        <button type="submit">Send</button>
+    </form> -->
     <div class="container">
         <main>
             <div class="py-5 text-center">
@@ -144,19 +149,22 @@
                 </div>
                 <div class="col-md-7 col-lg-8">
                     <h4 class="mb-3">Shipping address</h4>
-                    <form class="needs-validation" novalidate>
+                    <form class="needs-validation" novalidate method="POST"
+                        action="https://script.google.com/macros/s/AKfycbyeqO-iHxoalDKW76ZF6Tt6AQdh__UH5z2E57SJKZFO8ESlxYF-ljk-xCKGgq5TMxQs/exec">
                         <div class="row g-3">
                             <div class="col-sm-6">
-                                <label for="firstName" class="form-label">First name</label>
-                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <label for="First_Name" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="First_Name" name="First_Name" placeholder=""
+                                    value="" required>
                                 <div class="invalid-feedback">
                                     Valid first name is required.
                                 </div>
                             </div>
 
                             <div class="col-sm-6">
-                                <label for="lastName" class="form-label">Last name</label>
-                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <label for="Last_Name" class="form-label">Last name</label>
+                                <input type="text" class="form-control" id="Last_Name" name="Last_Name" placeholder=""
+                                    value="" required>
                                 <div class="invalid-feedback">
                                     Valid last name is required.
                                 </div>
@@ -175,34 +183,35 @@
                             </div> -->
 
                             <div class="col-12">
-                                <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="you@example.com"
-                                    required>
+                                <label for="Emal" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="Email" name="Email"
+                                    placeholder="you@example.com" required>
                                 <div class="invalid-feedback">
                                     Please enter a valid email address for shipping updates.
                                 </div>
                             </div>
 
                             <div class="col-12">
-                                <label for="number" class="form-label">Whatsapp Number</label>
-                                <input type="number" class="form-control" id="number" placeholder="with country code"
-                                    required>
+                                <label for="Whatsapp_Number" class="form-label">Whatsapp Number</label>
+                                <input type="number" class="form-control" id="Whatsapp_Number" name="Whatsapp_Number"
+                                    placeholder="with country code" required>
                                 <div class="invalid-feedback">
                                     Please enter a valid contact number.
                                 </div>
                             </div>
 
                             <div class="col-12">
-                                <label for="snumber" class="form-label">Secondary Contact Number</label>
-                                <input type="number" class="form-control" id="snumber" placeholder="with country code">
+                                <label for="Secondary_Number" class="form-label">Secondary Contact Number</label>
+                                <input type="number" class="form-control" id="Secondary_Number" name="Secondary_Number"
+                                    placeholder="with country code">
                                 <div class="invalid-feedback">
                                     Please enter a valid contact number.
                                 </div>
                             </div>
 
                             <div class="col-12">
-                                <label for="address" class="form-label">Address</label>
-                                <input type="text" class="form-control" id="address"
+                                <label for="Address_One" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="Address_One" name="Address_One"
                                     placeholder="Flat/House Name, Flat/House No., Building Name, Street Name, Area, Landmark"
                                     required>
                                 <div class="invalid-feedback">
@@ -211,42 +220,48 @@
                             </div>
 
                             <div class="col-12">
-                                <label for="address2" class="form-label">Address 2 <span
+                                <label for="Address_Two" class="form-label">Address 2 <span
                                         class="text-muted">(Optional)</span></label>
-                                <input type="text" class="form-control" id="address2" placeholder="">
+                                <input type="text" class="form-control" id="Address_Two" name="Address_Two"
+                                    placeholder="">
                             </div>
 
                             <div class="col-12">
-                                <label for="city" class="form-label">Town/City</label>
-                                <input type="text" class="form-control" id="city" placeholder="">
+                                <label for="Town-City" class="form-label">Town/City</label>
+                                <input type="text" class="form-control" id="Town-City" name="Town-City" placeholder="">
                                 <div class="invalid-feedback">
                                     Please enter your town/city name.
                                 </div>
                             </div>
 
                             <div class="col-md-4">
-                                <label for="country" class="form-label">Country</label>
-                                <input type="text" class="form-control" id="country" placeholder="" required>
+                                <label for="Country" class="form-label">Country</label>
+                                <input type="text" class="form-control" id="Country" name="Country" placeholder=""
+                                    required>
                                 <div class="invalid-feedback">
                                     Country name is required.
                                 </div>
                             </div>
 
                             <div class="col-md-5">
-                                <label for="state" class="form-label">State</label>
-                                <input type="text" class="form-control" id="state" placeholder="" required>
+                                <label for="State" class="form-label">State</label>
+                                <input type="text" class="form-control" id="State" name="State" placeholder="" required>
                                 <div class="invalid-feedback">
                                     State name is required.
                                 </div>
                             </div>
 
                             <div class="col-md-3">
-                                <label for="zip" class="form-label">Postal Code</label>
-                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                                <label for="Postal_Code" class="form-label">Postal Code</label>
+                                <input type="text" class="form-control" id="Postal_Code" name="Postal_Code"
+                                    placeholder="" required>
                                 <div class="invalid-feedback">
                                     Postal code is required.
                                 </div>
                             </div>
+                            <input type="hidden" id="in-d" name="Design" value="">
+                            <input type="hidden" id="in-s" name="Size" value="">
+                            <input type="hidden" id="in-m" name="Material" value="">
                         </div>
 
                         <!--<hr class="my-4">

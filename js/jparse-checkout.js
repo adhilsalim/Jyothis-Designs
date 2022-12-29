@@ -20,6 +20,7 @@ if (currentPageUrl.includes('?p=')) {
         if (item.m_id == material_id) {
             html = `${item.big_text_bold}`;
             document.getElementById('selectedMaterial').innerHTML = html;
+            document.getElementById('in-m').value = html;
         }
     });
 
@@ -29,27 +30,34 @@ if (currentPageUrl.includes('?p=')) {
         if (item.d_id == design_id) {
             html = `${item.big_text_bold}`;
             document.getElementById('selectedDesign').innerHTML = html;
+            document.getElementById('in-d').value = html;
         }
     });
 
     switch (size_id) {
         case '1':
             document.getElementById('selectedSize').innerHTML = 'Medium';
+            document.getElementById('in-s').value = 'Medium';
             break;
         case '2':
             document.getElementById('selectedSize').innerHTML = 'Large';
+            document.getElementById('in-s').value = 'Large';
             break;
         case '3':
             document.getElementById('selectedSize').innerHTML = 'XL';
+            document.getElementById('in-s').value = 'XL';
             break;
         case '4':
             document.getElementById('selectedSize').innerHTML = 'XXL';
+            document.getElementById('in-s').value = "XXL";
             break;
         case '5':
             document.getElementById('selectedSize').innerHTML = '3XL';
+            document.getElementById('in-s').value = "3XL";
             break;
         default:
-            document.getElementById('selectedSize').innerHTML = 'An error occured.';
+            document.getElementById('selectedSize').innerHTML = 'error';
+            document.getElementById('in-s').value = 'error';
     }
 }
 else {
