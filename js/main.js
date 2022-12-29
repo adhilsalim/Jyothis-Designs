@@ -240,22 +240,18 @@ function nextPage(id) {
     var pageUrl = window.location.href;
     var url = pageUrl;
 
-    // console.log(url.includes('#'));
-    // if (url.includes('#')) {
-    //     console.log('entering if');
-    //     url.replace('#', '');
-    // }
-    // while (url.includes('#')) {
-    //     console.log('entering while');
-    //     url = url.replace('#', '');
-    // }
+
+    if (url.includes('#')) {
+        url = url.replaceAll('#', '');
+    }
+
     console.log('value ' + id);
 
 
 
     if (url.includes('size')) {
         var sizeNumber = document.querySelectorAll("input[name=listGroupCheckableRadios]:checked")[0].value;
-        url = pageUrl.replace('size', 'checkout') + sizeNumber;
+        url = url.replace('size', 'checkout') + sizeNumber;
         console.log(url);
         window.location.replace(url);
     }
@@ -263,16 +259,16 @@ function nextPage(id) {
         if (id.length == 3) {
 
             if (pageUrl.includes('material')) {
-                url = pageUrl.replace('material', 'design') + '?p=' + id;
+                url = url.replace('material', 'design') + '?p=' + id;
                 window.location.replace(url);
             }
             else if (pageUrl.includes('design')) {
-                url = pageUrl.replace('design', 'size') + id;
+                url = url.replace('design', 'size') + id;
                 window.location.replace(url);
             }
         }
         else {
-            url = pageUrl.replace('index', 'size') + '?p=' + id;
+            url = url.replace('index', 'size') + '?p=' + id;
             window.location.replace(url);
         }
     }
