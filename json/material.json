@@ -92,37 +92,6 @@
         }
     ],
     "categories": [
-        {
-            "title": "Category 1",
-            "id": "category-1",
-            "items": [
-                {
-                    "item_name": "Item 1"
-                },
-                {
-                    "item_name": "Item 2"
-                },
-                {
-                    "item_name": "Item 3"
-                }
-            ],
-            "active": ""
-        },
-        {
-            "title": "Category 2",
-            "id": "category-2",
-            "items": [
-                {
-                    "item_name": "Item 1"
-                },
-                {
-                    "item_name": "Item 2"
-                },
-                {
-                    "item_name": "Item 3"
-                }
-            ],
-            "active": ""
-        }
+
     ]
 }
