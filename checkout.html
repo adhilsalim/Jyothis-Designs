@@ -79,7 +79,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="form-validation.css" rel="stylesheet">
+    <!-- <link href="form-validation.css" rel="stylesheet"> -->
 </head>
 
 <body class="bg-light">
@@ -108,14 +108,14 @@
                     <ul class="list-group mb-3">
                         <li class="list-group-item d-flex justify-content-between lh-sm">
                             <div>
-                                <h6 class="my-0">Material Name</h6>
+                                <h6 class="my-0">Selected Material</h6>
                                 <small class="text-muted" id="selectedMaterial"></small>
                             </div>
                             <!-- <span class="text-muted">$12</span> -->
                         </li>
                         <li class="list-group-item d-flex justify-content-between lh-sm">
                             <div>
-                                <h6 class="my-0">Design Name</h6>
+                                <h6 class="my-0">Selected Design</h6>
                                 <small class="text-muted" id="selectedDesign"></small>
                             </div>
                             <!-- <span class="text-muted">$8</span> -->
@@ -149,8 +149,9 @@
                 </div>
                 <div class="col-md-7 col-lg-8">
                     <h4 class="mb-3">Shipping address</h4>
-                    <form class="needs-validation" novalidate method="POST"
-                        action="https://script.google.com/macros/s/AKfycbyeqO-iHxoalDKW76ZF6Tt6AQdh__UH5z2E57SJKZFO8ESlxYF-ljk-xCKGgq5TMxQs/exec">
+                    <form name="jd-order" method="POST"
+                        action="https://script.google.com/macros/s/AKfycbyeqO-iHxoalDKW76ZF6Tt6AQdh__UH5z2E57SJKZFO8ESlxYF-ljk-xCKGgq5TMxQs/exec"
+                        novalidate>
                         <div class="row g-3">
                             <div class="col-sm-6">
                                 <label for="First_Name" class="form-label">First name</label>
@@ -340,6 +341,30 @@
             </div>
         </main>
 
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbyeqO-iHxoalDKW76ZF6Tt6AQdh__UH5z2E57SJKZFO8ESlxYF-ljk-xCKGgq5TMxQs/exec';
+            const form = document.forms['jd-order'];
+
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response =>
+                        formSuccess()
+                    )
+                    .catch(error => formError())
+            })
+
+            function formSuccess() {
+                window.location.href = "https://jyothisdesigns.com/thankyou.html";
+            }
+
+            function formError() {
+                window.location.href = "https://jyothisdesigns.com/error.html";
+            }
+
+        </script>
+
         <footer class="my-5 pt-5 text-muted text-center text-small">
             <p class="mb-1">Copyright &copy;
                 <script>document.write(new Date().getFullYear());</script> Jyothis Designs
@@ -353,7 +378,7 @@
     </div>
 
     <script type="module" src="js/jparse-checkout.js"></script>
-    <script src="form-validation.js"></script>
+    <!-- <script src="form-validation.js"></script> -->
 </body>
 
 </html>
