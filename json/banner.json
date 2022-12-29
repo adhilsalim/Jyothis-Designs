@@ -2,20 +2,20 @@
     "image": "./img/banner/banner-1.jpg",
     "slides": [
         {
-            "small_text": "small text one",
-            "big_text": "big text one",
+            "small_text": "End Of Season",
+            "big_text": "SALE !",
             "button_text": "shop now",
             "button_link": "#"
         },
         {
-            "small_text": "small text two",
-            "big_text": "big text two",
+            "small_text": "Free delivery on",
+            "big_text": "1ST ORDER",
             "button_text": "shop now",
             "button_link": "#"
         },
         {
-            "small_text": "small text three",
-            "big_text": "big text three",
+            "small_text": "COMPLETING YOUR DREAMS",
+            "big_text": "The Future of FASHION",
             "button_text": "shop now",
             "button_link": "#"
         }
