@@ -251,23 +251,23 @@ function nextPage(id) {
 
     if (url.includes('size')) {
         var sizeNumber = document.querySelectorAll("input[name=listGroupCheckableRadios]:checked")[0].value;
-        url = url.replace('size', 'checkout') + sizeNumber;
+        url = url.replace('size/', 'checkout/') + sizeNumber;
         window.location.replace(url);
     }
     else {
         if (id.length == 3) {
 
             if (pageUrl.includes('material')) {
-                url = url.replace('material', 'design') + '?p=' + id;
+                url = url.replace('material/', 'design/') + '?p=' + id;
                 window.location.replace(url);
             }
             else if (pageUrl.includes('design')) {
-                url = url.replace('design', 'size') + id;
+                url = url.replace('design/', 'size/') + id;
                 window.location.replace(url);
             }
         }
         else {
-            url = url.replace('index', 'size') + '?p=' + id;
+            url = url.replace('Jyothis-Designs/', 'Jyothis-Designs/size/') + '?p=' + id;
             window.location.replace(url);
         }
     }

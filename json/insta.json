@@ -1,32 +1,32 @@
 {
     "posts": [
         {
-            "image": "img/instagram/insta-1.jpg",
+            "image": "../img/instagram/insta-1.jpg",
             "post_url": "#",
             "user_id": "@ jyothis_desgins"
         },
         {
-            "image": "img/instagram/insta-1.jpg",
+            "image": "../img/instagram/insta-1.jpg",
             "post_url": "#",
             "user_id": "@ jyothis_desgins"
         },
         {
-            "image": "img/instagram/insta-1.jpg",
+            "image": "../img/instagram/insta-1.jpg",
             "post_url": "#",
             "user_id": "@ jyothis_desgins"
         },
         {
-            "image": "img/instagram/insta-1.jpg",
+            "image": "../img/instagram/insta-1.jpg",
             "post_url": "#",
             "user_id": "@ jyothis_desgins"
         },
         {
-            "image": "img/instagram/insta-1.jpg",
+            "image": "../img/instagram/insta-1.jpg",
             "post_url": "#",
             "user_id": "@ jyothis_desgins"
         },
         {
-            "image": "img/instagram/insta-1.jpg",
+            "image": "../img/instagram/insta-1.jpg",
             "post_url": "#",
             "user_id": "@ jyothis_desgins"
         }

@@ -122,7 +122,6 @@ recentOrders.orders.forEach((item) => {
 document.getElementById('recentOrders-s-0').innerHTML = html;
 
 
-
 //FUNCTIONS//
 $(".banner__slider").owlCarousel({
     loop: true,
