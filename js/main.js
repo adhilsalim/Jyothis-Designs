@@ -240,22 +240,29 @@ function nextPage(id) {
     var pageUrl = window.location.href;
     var url = pageUrl;
 
-    console.log(url.includes('#'));
-    if (url.includes('#')) {
-        console.log('entering if');
-        url.replace('#', '');
-    }
-    while (url.includes('#')) {
-        console.log('entering while');
-        url = url.replace('#', '');
-    }
+    // console.log(url.includes('#'));
+    // if (url.includes('#')) {
+    //     console.log('entering if');
+    //     url.replace('#', '');
+    // }
+    // while (url.includes('#')) {
+    //     console.log('entering while');
+    //     url = url.replace('#', '');
+    // }
+    console.log(id);
+    if (id.length == 3) {
 
-    if (pageUrl.includes('material')) {
-        url = pageUrl.replace('material', 'design') + '?p=' + id;
-        window.location.replace(url);
+        if (pageUrl.includes('material')) {
+            url = pageUrl.replace('material', 'design') + '?p=' + id;
+            window.location.replace(url);
+        }
+        else if (pageUrl.includes('design')) {
+            url = pageUrl.replace('design', 'size') + id;
+            window.location.replace(url);
+        }
     }
-    else if (pageUrl.includes('design')) {
-        url = pageUrl.replace('design', 'size') + id;
+    else {
+        url = pageUrl.replace('index', 'size') + '?p=' + id;
         window.location.replace(url);
     }
 }

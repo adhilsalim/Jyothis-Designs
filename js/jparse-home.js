@@ -105,14 +105,14 @@ recentOrders.orders.forEach((item) => {
     html +=
         `<div class="col-lg-3 col-md-4 col-sm-6 ${item.category}">
     <div class="product__item">
-        <div class="product__item__pic set-bg" data-setbg=${item.image} onclick="${item.function}">
+        <div class="product__item__pic set-bg" data-mdid=${item.md_id} data-setbg=${item.image} onclick="${item.function}">
             <div class="label ${item.label_style}">${item.label_text}</div>
             <ul class="product__hover">
-                <li><a href="${item.link}" onclick="${item.function}"><span class="icon_bag_alt"></span></a></li>
+                <li><a href="${item.link}"><span class="icon_bag_alt"></span></a></li>
             </ul>
         </div>
         <div class="product__item__text">
-            <h6><a href="${item.link}" onclick="${item.function}">${item.text_small}</a></h6>
+            <h6><a href="${item.link}" data-mdid=${item.md_id} onclick="${item.function}">${item.text_small}</a></h6>
             <div class="product__price">${item.text_big_small}</div>
         </div>
     </div>

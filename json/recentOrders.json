@@ -9,7 +9,7 @@
             "label_text": "label text",
             "link": "#",
             "md_id": "001006",
-            "function": "console.log('click')"
+            "function": "nextPage(this.dataset.mdid)"
         },
         {
             "text_small": "big text one",
@@ -20,7 +20,7 @@
             "label_text": "label text",
             "link": "#",
             "md_id": "001006",
-            "function": "console.log('click')"
+            "function": "nextPage(this.dataset.mdid)"
         },
         {
             "text_small": "big text one",
@@ -31,7 +31,7 @@
             "label_text": "label text",
             "link": "#",
             "md_id": "001006",
-            "function": "nextPage(this.dataset.mid)"
+            "function": "nextPage(this.dataset.mdid)"
         },
         {
             "text_small": "big text one",
@@ -42,7 +42,7 @@
             "label_text": "label text",
             "link": "#",
             "md_id": "001006",
-            "function": "nextPage(this.dataset.mid)"
+            "function": "nextPage(this.dataset.mdid)"
         },
         {
             "text_small": "big text one",
@@ -53,7 +53,7 @@
             "label_text": "label text",
             "link": "#",
             "md_id": "001006",
-            "function": "nextPage(this.dataset.mid)"
+            "function": "nextPage(this.dataset.mdid)"
         },
         {
             "text_small": "big text one",
@@ -64,7 +64,7 @@
             "label_text": "label text",
             "link": "#",
             "md_id": "001006",
-            "function": "nextPage(this.dataset.mid)"
+            "function": "nextPage(this.dataset.mdid)"
         },
         {
             "text_small": "big text one",
@@ -75,7 +75,7 @@
             "label_text": "label text",
             "link": "#",
             "md_id": "001006",
-            "function": "nextPage(this.dataset.mid)"
+            "function": "nextPage(this.dataset.mdid)"
         },
         {
             "text_small": "big text one",
@@ -86,7 +86,7 @@
             "label_text": "label text",
             "link": "#",
             "md_id": "001006",
-            "function": "nextPage(this.dataset.mid)"
+            "function": "nextPage(this.dataset.mdid)"
         }
     ]
 }
