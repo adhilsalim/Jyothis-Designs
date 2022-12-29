@@ -252,7 +252,6 @@ function nextPage(id) {
     if (url.includes('size')) {
         var sizeNumber = document.querySelectorAll("input[name=listGroupCheckableRadios]:checked")[0].value;
         url = url.replace('size', 'checkout') + sizeNumber;
-        console.log(url);
         window.location.replace(url);
     }
     else {
