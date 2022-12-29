@@ -27,9 +27,9 @@ var pLoc = currentPageUrl.indexOf('?p=');
 var material_id = currentPageUrl.slice(pLoc + 3, pLoc + 6);
 var design_id = currentPageUrl.slice(pLoc + 6, pLoc + 9);
 
-console.log(pLoc);
-console.log(currentPageUrl.slice(pLoc + 3, pLoc + 6));
-console.log(currentPageUrl.slice(pLoc + 6, pLoc + 9));
+// console.log(pLoc);
+// console.log(currentPageUrl.slice(pLoc + 3, pLoc + 6));
+// console.log(currentPageUrl.slice(pLoc + 6, pLoc + 9));
 
 
 if (currentPageUrl.includes('?p=')) {
@@ -37,14 +37,14 @@ if (currentPageUrl.includes('?p=')) {
     material.materials.forEach((item) => {
         if (item.m_id == material_id) {
             html = `Material: ${item.big_text_bold}<br>`;
-            console.log(item.big_text_bold);
+            // console.log(item.big_text_bold);
         }
     });
 
     design.designs.forEach((item) => {
         if (item.d_id == design_id) {
             html += `Design: ${item.big_text_bold}`;
-            console.log(item.big_text_bold);
+            // console.log(item.big_text_bold);
         }
     });
 

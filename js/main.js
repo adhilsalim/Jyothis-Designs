@@ -249,20 +249,32 @@ function nextPage(id) {
     //     console.log('entering while');
     //     url = url.replace('#', '');
     // }
-    console.log(id);
-    if (id.length == 3) {
+    console.log('value ' + id);
 
-        if (pageUrl.includes('material')) {
-            url = pageUrl.replace('material', 'design') + '?p=' + id;
-            window.location.replace(url);
-        }
-        else if (pageUrl.includes('design')) {
-            url = pageUrl.replace('design', 'size') + id;
-            window.location.replace(url);
-        }
-    }
-    else {
-        url = pageUrl.replace('index', 'size') + '?p=' + id;
+
+
+    if (url.includes('size')) {
+        var sizeNumber = document.querySelectorAll("input[name=listGroupCheckableRadios]:checked")[0].value;
+        url = pageUrl.replace('size', 'checkout') + sizeNumber;
+        console.log(url);
         window.location.replace(url);
     }
+    else {
+        if (id.length == 3) {
+
+            if (pageUrl.includes('material')) {
+                url = pageUrl.replace('material', 'design') + '?p=' + id;
+                window.location.replace(url);
+            }
+            else if (pageUrl.includes('design')) {
+                url = pageUrl.replace('design', 'size') + id;
+                window.location.replace(url);
+            }
+        }
+        else {
+            url = pageUrl.replace('index', 'size') + '?p=' + id;
+            window.location.replace(url);
+        }
+    }
+
 }
