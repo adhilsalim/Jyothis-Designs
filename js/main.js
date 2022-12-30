@@ -237,6 +237,10 @@ Created: Colorib
 
 //REDIRECTION
 function nextPage(id) {
+
+    document.getElementById('preloder').style.display = 'block';
+    document.getElementsByClassName('loader')[0].style.display = 'block';
+
     var pageUrl = window.location.href;
     var url = pageUrl;
 
