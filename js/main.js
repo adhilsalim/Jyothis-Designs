@@ -238,7 +238,7 @@ Created: Colorib
 //REDIRECTION
 function modalClose(page) {
     var hostname = window.location.hostname;
-    window.location.replace('http://' + hostname + '/material/');
+    window.location.replace('http://' + hostname + '/Jyothis-Designs/material/');
 }
 
 function nextPage(id) {
