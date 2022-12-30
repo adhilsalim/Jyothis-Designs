@@ -1,5 +1,5 @@
 import mini from '../json/mini.json' assert { type: 'json' };
-import insta from '../json/insta.json' assert { type: 'json' };
+import insta from '../json/insta-home.json' assert { type: 'json' };
 import banner from '../json/banner.json' assert { type: 'json' };
 import recentOrders from '../json/recentOrders.json' assert { type: 'json' };
 
