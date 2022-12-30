@@ -36,23 +36,27 @@ if (currentPageUrl.includes('?p=')) {
 
     var validMaterialNumber = currentPageUrl.slice(pLoc + 3, pLoc + 6);
     var validDesignNumber = currentPageUrl.slice(pLoc + 6, pLoc + 9);
+    var materialName = '';
+    var designName = '';
 
     if (validDesignNumber && validMaterialNumber) {
         material.materials.forEach((item) => {
             if (item.m_id == material_id) {
                 html = `Material: ${item.big_text_bold}<br>`;
+                materialName = item.big_text_bold;
             }
         });
 
         design.designs.forEach((item) => {
             if (item.d_id == design_id) {
                 html += `Design: ${item.big_text_bold}`;
+                designName = item.big_text_bold;
             }
         });
 
         document.getElementById('p-m-d').innerHTML = html;
 
-        if (html == "") {
+        if (materialName == '' || designName == '') {
             console.log('no product details');
             document.getElementById('p-m-d').innerHTML = 'No Product Details';
             $("#myModal--effect-pulse").modal('show');
