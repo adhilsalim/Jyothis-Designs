@@ -249,10 +249,6 @@ function nextPage(id) {
         url = url.replaceAll('#', '');
     }
 
-    console.log('value ' + id);
-
-
-
     if (url.includes('size')) {
         var sizeNumber = document.querySelectorAll("input[name=listGroupCheckableRadios]:checked")[0].value;
         url = url.replace('size/', 'checkout/') + sizeNumber;
