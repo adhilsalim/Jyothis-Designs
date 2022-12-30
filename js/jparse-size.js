@@ -23,35 +23,53 @@ document.getElementById('insta-s-0').innerHTML = html;
 
 html = "";
 var currentPageUrl = window.location.href;
-var pLoc = currentPageUrl.indexOf('?p=');
-var material_id = currentPageUrl.slice(pLoc + 3, pLoc + 6);
-var design_id = currentPageUrl.slice(pLoc + 6, pLoc + 9);
-
-// console.log(pLoc);
-// console.log(currentPageUrl.slice(pLoc + 3, pLoc + 6));
-// console.log(currentPageUrl.slice(pLoc + 6, pLoc + 9));
-
 
 if (currentPageUrl.includes('?p=')) {
 
-    material.materials.forEach((item) => {
-        if (item.m_id == material_id) {
-            html = `Material: ${item.big_text_bold}<br>`;
-            // console.log(item.big_text_bold);
-        }
-    });
+    var pLoc = currentPageUrl.indexOf('?p=');
+    var material_id = currentPageUrl.slice(pLoc + 3, pLoc + 6);
+    var design_id = currentPageUrl.slice(pLoc + 6, pLoc + 9);
 
-    design.designs.forEach((item) => {
-        if (item.d_id == design_id) {
-            html += `Design: ${item.big_text_bold}`;
-            // console.log(item.big_text_bold);
-        }
-    });
+    // console.log(Number.isInteger(pLoc) + ' ' + pLoc);
+    // console.log(Number.isInteger(currentPageUrl.slice(pLoc + 3, pLoc + 6)) + ' ' + currentPageUrl.slice(pLoc + 3, pLoc + 6));
+    // console.log(Number.isInteger(currentPageUrl.slice(pLoc + 6, pLoc + 9)) + ' ' + currentPageUrl.slice(pLoc + 6, pLoc + 9));
 
-    document.getElementById('p-m-d').innerHTML = html;
+    var validMaterialNumber = currentPageUrl.slice(pLoc + 3, pLoc + 6);
+    var validDesignNumber = currentPageUrl.slice(pLoc + 6, pLoc + 9);
+
+    if (validDesignNumber && validMaterialNumber) {
+        material.materials.forEach((item) => {
+            if (item.m_id == material_id) {
+                html = `Material: ${item.big_text_bold}<br>`;
+            }
+        });
+
+        design.designs.forEach((item) => {
+            if (item.d_id == design_id) {
+                html += `Design: ${item.big_text_bold}`;
+            }
+        });
+
+        document.getElementById('p-m-d').innerHTML = html;
+
+        if (html == "") {
+            console.log('no product details');
+            document.getElementById('p-m-d').innerHTML = 'No Product Details';
+            $("#myModal--effect-pulse").modal('show');
+        }
+    }
+    else {
+        console.log('no product details');
+        document.getElementById('p-m-d').innerHTML = 'No Product Details';
+        $("#myModal--effect-pulse").modal('show');
+    }
+
+
 }
 else {
     console.log('no product details');
+    document.getElementById('p-m-d').innerHTML = 'No Product Details';
+    $("#myModal--effect-pulse").modal('show');
 }
 
 
