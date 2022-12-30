@@ -5,19 +5,19 @@
             "small_text": "End Of Season",
             "big_text": "SALE !",
             "button_text": "shop now",
-            "button_link": "#"
+            "button_link": "./material/"
         },
         {
             "small_text": "Free delivery on",
             "big_text": "1ST ORDER",
             "button_text": "shop now",
-            "button_link": "#"
+            "button_link": "./material/"
         },
         {
             "small_text": "COMPLETING YOUR DREAMS",
             "big_text": "The Future of FASHION",
             "button_text": "shop now",
-            "button_link": "#"
+            "button_link": "./material/"
         }
     ]
 }
