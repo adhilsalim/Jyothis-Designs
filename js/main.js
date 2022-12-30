@@ -17,6 +17,8 @@ Created: Colorib
     $(window).on('load', function () {
         $(".loader").fadeOut();
         $("#preloder").delay(200).fadeOut("slow");
+        document.getElementById('preloder').style.display = 'block';
+        document.getElementsByClassName('loader')[0].style.display = 'block';
 
         /*------------------
             Product filter
