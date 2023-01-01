@@ -19,6 +19,7 @@ Created: Colorib
         $("#preloder").delay(200).fadeOut("slow");
         document.getElementById('preloder').style.display = 'block';
         document.getElementsByClassName('loader')[0].style.display = 'block';
+        console.log('pre loader closed');
 
         /*------------------
             Product filter
@@ -245,8 +246,9 @@ function modalClose(page) {
 
 function nextPage(id) {
 
-    document.getElementById('preloder').style.display = 'block';
-    document.getElementsByClassName('loader')[0].style.display = 'block';
+    // document.getElementById('preloder').style.display = 'block';
+    // document.getElementsByClassName('loader')[0].style.display = 'block';
+    console.log('pre loader on');
 
     var pageUrl = window.location.href;
     var url = pageUrl;
@@ -280,3 +282,5 @@ function nextPage(id) {
     }
 
 }
+
+//2023@althaf@123
